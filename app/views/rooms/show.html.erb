@@ -1,11 +1,15 @@
-<h1>Kaoshiung Rails Meetup</h1>
-
-<div id="messages">
-  <%= render @messages%>
+<div class="panel panel-info">
+  <div class="panel-heading">Kaoshiung Rails Meetup</div>
+  <div class="panel-body">
+    <div id="messages">
+      <%= render @messages%>
+    </div>
+  </div>
 </div>
 
-
 <form>
-  <label> Say something </label>
-  <input type="text" data-behavior="room_speaker" />
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> + </span>
+    <input type="text" class="form-control" data-behavior="room_speaker" placeholder="Say something" />
+  </div>
 </form>
